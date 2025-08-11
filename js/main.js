@@ -158,25 +158,25 @@
 // } else {
 //     console.log("Ikkalasi teng");
 // }
-3.
-let weekday = +prompt("hafta kunini kiriting");
-if (weekday==1){
-    alert("Bu dushanba kuni");
-} else if(weekday==2){
-    alert("Bu seshanba kuni");
-} else if (weekday==3) {
-    alert ("Bu kun chorshanba");
-} else if(weekday==4){
-    alert("bu kun payshanba");
-} else if(weekday==5){
-    alert("bu kun juma");
-} else if(weekday==6){
-    alert("Bu kun Shanba");
-} else if (weekday==7){
-    alert("Bu kun Yakshanba");
-} else if (weekday<<7){
-    alert("Bunday o'rinda hafta kuni yo'q")
-}
+// 3.
+// let weekday = +prompt("hafta kunini kiriting");
+// if (weekday==1){
+//     alert("Bu dushanba kuni");
+// } else if(weekday==2){
+//     alert("Bu seshanba kuni");
+// } else if (weekday==3) {
+//     alert ("Bu kun chorshanba");
+// } else if(weekday==4){
+//     alert("bu kun payshanba");
+// } else if(weekday==5){
+//     alert("bu kun juma");
+// } else if(weekday==6){
+//     alert("Bu kun Shanba");
+// } else if (weekday==7){
+//     alert("Bu kun Yakshanba");
+// } else if (weekday<<7){
+//     alert("Bunday o'rinda hafta kuni yo'q")
+// }
 
 
 
@@ -237,6 +237,59 @@ if (weekday==1){
 // alert("Bu ikki son o'rta arifmetigi" + " " + avarage + " " + "ga teng!");
 
 
-9.
+// 9. 
+// let a = Number(prompt("a sonini kiriting"));
+// let b = +prompt("b sonini kiriting");
+// if (a == 0){
+//     alert("A soni 0 ga teng bo'lishi mumkinmas");
+// }
+// if (b == 0){
+//     alert("B soni 0 ga teng bo'lishi mumkinmas");
+// } else{
+//     alert(a + " " + "va"+ " " + b + " " + "sonlarining yig'indisi" + " " + (a+b) + " " + "ga teng");
+//     alert(a + " " + "va" + " " + b + " " + "sonlarining ko'paytmasi:" + " " + (a*b) + " " + "ga teng");
+//     alert(a + " " + "sonining kvadrati" + " " + (a**2) + " " + "ga teng");
+//     alert(b + " " + "sonining kvadrati" + " " + (b**2) + " " + "ga teng");
+// }
 
+
+
+//                                                                TOPSHIRIQ
+// Majburiy blok
+
+
+let fullName = prompt("Ismingizni kiriting:");
+alert("Salom " + fullName);
+
+let motherTongue = +prompt("Majburiy-blok ona-tili fanidan olgan ballingizni kiriting:");
+let english = +prompt("Majburiy-blok ingliz-tili fanidan olgan ballingizni kiriting:");
+let math = +prompt("Majburiy-blok matematika fanidan olgan ballingizni kiriting:");
+
+let maxobligated = 60;
+let minobligated = 45;
+let totalscore = motherTongue + english + math;
+
+if (totalscore >= minobligated && totalscore <= maxobligated) {
+    alert("Tabriklaymiz, siz majburiy-blok imtihonidan o'tdingiz!");
+
+    // Asosiy imtihon ballari
+    let geografiya = +prompt("Geografiya fanidan olgan ballingizni kiriting (0-70):");
+    let tarix = +prompt("Tarix fanidan olgan ballingizni kiriting (0-70):");
+    let fizika = +prompt("Fizika fanidan olgan ballingizni kiriting (0-70):");
+
+    let asosiyJami = geografiya + tarix + fizika;
+
+    if (asosiyJami > 190 && asosiyJami <= 210) {
+        alert("Tabriklaymiz! Siz GRAND asosida o‘qishga qabul qilindingiz. Jami ballingiz: " + asosiyJami);
+    } else if (asosiyJami > 110 && asosiyJami <= 190) {
+        alert("Siz KONTRAKT asosida o'qishga qabul qilindingiz. Jami ballingiz: " + asosiyJami);
+    } else if (asosiyJami >= 70 && asosiyJami <= 110) {
+        alert("Siz SUPERKONTRAKT asosida o'qishga qabul qilindingiz. Jami ballingiz: " + asosiyJami);
+    } else {
+        alert("Afsuski siz asosiy imtihondan o'ta olmadingiz. Jami ballingiz: " + asosiyJami);
+    }
+
+} else {
+    alert("Afsuski siz asosiy blok imtihoniga kira olmaysiz");
+}
 
