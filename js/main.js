@@ -426,6 +426,6 @@
 //         console.log("Bunday kun yo'q")      
 // }
 
-let name = 'Asadbek';
-let job = 'student';
-console.log(`Mening ismim ${name}, va men ${job} man`)
+// let name = 'Asadbek';
+// let job = 'student';
+// console.log(`Mening ismim ${name}, va men ${job} man`)
